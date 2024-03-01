@@ -8,10 +8,10 @@ search.addEventListener("keydown", (event) => {
     if (event.key === "Enter") {
         event.preventDefault();
         const city = search.value;
+        const apiKey = "------------------------------------------"
 
 
-
-        fetch(`https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=bc9a00ea8c319215cd42d827a5a7d657`)
+        fetch(`https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${apiKey}`)
             .then(response => {
                 if (!response.ok) {
                     throw new Error('Network response was not ok');
