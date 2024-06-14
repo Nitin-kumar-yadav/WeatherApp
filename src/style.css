@@ -78,6 +78,12 @@ input::placeholder {
 }
 
 .weather__icon img {
+
+    width: 100px;
+}
+
+.weather__icon svg {
+    filter: invert();
     width: 100px;
 }
 
